@@ -16,13 +16,14 @@ namespace Adventure_Game_Summative_Actual
 {
     public partial class Form1 : Form
     {
-        string name;
-        int scene = 0;
-        Random randNum = new Random();
-        bool print = false;
+        string name;//Creates a string variable to hold the name
+        int scene = 0;//Intializes the scene to 0
+        Random randNum = new Random();//Creates a random number generator
+        bool print = false;//Creates a boolean and sets it to false
 
-        DateTime thisDay = DateTime.Today;
+        DateTime thisDay = DateTime.Today;//Creates a variable to hold the current day
 
+        //Creates soundplayers to play sound
         SoundPlayer winSound = new SoundPlayer(Properties.Resources._270528__littlerobotsoundfactory__jingle_win_00);
         SoundPlayer themeSong = new SoundPlayer(Properties.Resources._320553__griffon_designs__dirty_grind);
         SoundPlayer billNye = new SoundPlayer(Properties.Resources.Bill_Nye__The_Science_Guy__Original_Intro___);
@@ -32,8 +33,9 @@ namespace Adventure_Game_Summative_Actual
         {
             InitializeComponent();
 
-            nameInput.MaxLength = 6;
+            nameInput.MaxLength = 6;//Sets the max length of the textbox to 6 characters
 
+            //Gives instructions to the user
             firstChoiceLabel.Text = "Press R To continue";
             secondChoiceLabel.Text = "Press B to continue";
             thirdChoiceLabel.Text = "Press Y to continue";
@@ -42,26 +44,25 @@ namespace Adventure_Game_Summative_Actual
         private void beginButton_Click(object sender, EventArgs e)
         {
 
-            name = nameInput.Text;
+            name = nameInput.Text;//Sets name to the text of the textbox
 
+            //Makes it impossible to input no name
             if (nameInput.Text == "")
             {
                 titleLabel.Text = "Welcome adventurer, what is your name?\nPlease enter your name.";
             }
             else
             {
-                themeSong.PlayLooping();
+                themeSong.PlayLooping();//Plays the theme song on repeat
 
-                beginButton.Enabled = false;
+                beginButton.Enabled = false;//Disables the begin button
 
+                //Makes some labels invisible
                 nameInput.Visible = false;
                 firstButtonLabel.Visible = false;
                 beginButton.Visible = false;
 
-                firstChoiceLabel.Text = "";
-                secondChoiceLabel.Text = "";
-                thirdChoiceLabel.Text = "";
-
+                //Sets the text to that of the first scene
                 titleLabel.Text = name + " looks at his phone. It reads: " + thisDay.ToString("D") + " 12:00 AM. " + name + " looks around themself and barely makes out an abandoned lab at Central. What should " + name + " do?";
                 firstChoiceLabel.Text = "Check the front door";
                 secondChoiceLabel.Text = "Check the back door";
@@ -70,11 +71,13 @@ namespace Adventure_Game_Summative_Actual
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            Graphics formGraphics = this.CreateGraphics();
+            Graphics formGraphics = this.CreateGraphics();//Creates a graphics object
 
+            //Creates two random numbers
             int firstChance = randNum.Next(1, 101);
             int secondChance = randNum.Next(1, 101);
 
+            //Switches between scene when the R button is pressed
             if (e.KeyCode == Keys.R)
             {
                 if (scene == 0)
@@ -113,7 +116,7 @@ namespace Adventure_Game_Summative_Actual
                 {
                     scene = 16;
                 }
-                else if (scene == 17 && firstChance <= 50)
+                else if (scene == 17 && firstChance <= 50)//Random encounter
                 {
                     scene = 18;
                 }
@@ -145,7 +148,7 @@ namespace Adventure_Game_Summative_Actual
                 {
                     scene = 31;
                 }
-                else if (scene == 32 && firstChance <= 95 && secondChance <= 60)
+                else if (scene == 32 && firstChance <= 95 && secondChance <= 60)//Random encounter
                 {
                     scene = 35;
                 }
@@ -157,7 +160,7 @@ namespace Adventure_Game_Summative_Actual
                 {
                     scene = 33;
                 }
-                else if (scene == 35 && firstChance <= 95 && secondChance <= 60)
+                else if (scene == 35 && firstChance <= 95 && secondChance <= 60)//Random encounter
                 {
                     scene = 36;
                 }
@@ -169,7 +172,7 @@ namespace Adventure_Game_Summative_Actual
                 {
                     scene = 33;
                 }
-                 else if (scene == 36 && firstChance <= 95 && secondChance <= 60)
+                 else if (scene == 36 && firstChance <= 95 && secondChance <= 60)//Random encounter
                 {
                     scene = 9;
                 }
@@ -181,7 +184,7 @@ namespace Adventure_Game_Summative_Actual
                 {
                     scene = 33;
                 }
-                else if (scene == 6)
+                else if (scene == 6)//Resets form to scene 1
                 {
                     themeSong.PlayLooping();
 
@@ -434,7 +437,7 @@ namespace Adventure_Game_Summative_Actual
                     scene = 0;
                 }
 
-                else if (e.KeyCode == Keys.B)
+                else if (e.KeyCode == Keys.B)//Changes scenes if the B key is pressed
                 {
                     if (scene == 0)
                     {
@@ -468,7 +471,7 @@ namespace Adventure_Game_Summative_Actual
                     {
                         scene = 20;
                     }
-                    else if (scene == 17 && firstChance <= 70)
+                    else if (scene == 17 && firstChance <= 70)//Random encounter 
                     {
                         scene = 21;
                     }
@@ -484,7 +487,7 @@ namespace Adventure_Game_Summative_Actual
                     {
                         scene = 23;
                     }
-                    else if (scene == 23 && secondChance <= 70 && firstChance <= 50)
+                    else if (scene == 23 && secondChance <= 70 && firstChance <= 50)//Random encounter 
                     {
                         scene = 26;
                     }
@@ -508,7 +511,7 @@ namespace Adventure_Game_Summative_Actual
                     {
                         scene = 32;
                     }
-                    else if (scene == 32 && firstChance <= 50 && secondChance <= 75)
+                    else if (scene == 32 && firstChance <= 50 && secondChance <= 75)//Random encounter 
                     {
                         scene = 35;
                     }
@@ -520,7 +523,7 @@ namespace Adventure_Game_Summative_Actual
                     {
                         scene = 33;
                     }
-                    else if (scene == 35 && firstChance <= 50 && secondChance <= 75)
+                    else if (scene == 35 && firstChance <= 50 && secondChance <= 75)//Random encounter 
                     {
                         scene = 36;
                     }
@@ -532,7 +535,7 @@ namespace Adventure_Game_Summative_Actual
                     {
                         scene = 33;
                     }
-                    else if (scene == 36 && firstChance <= 50 && secondChance <= 75)
+                    else if (scene == 36 && firstChance <= 50 && secondChance <= 75)//Random encounter 
                     {
                         scene = 9;
                     }
@@ -548,7 +551,7 @@ namespace Adventure_Game_Summative_Actual
                     {
                         scene = 32;
                     }
-                    else if (scene == 6)
+                    else if (scene == 6)//Closes program
                     {
                         this.Close();
                     }
@@ -622,7 +625,7 @@ namespace Adventure_Game_Summative_Actual
                     }
                 }
 
-               else if (e.KeyCode == Keys.Y)
+               else if (e.KeyCode == Keys.Y)//Changes scenes if Y key is pressed
                 {
                     if (scene == 0)
                     {
@@ -636,7 +639,7 @@ namespace Adventure_Game_Summative_Actual
                     {
                         scene = 11;
                     }
-                    else if (scene == 32 && firstChance <= 30 && secondChance <= 90)
+                    else if (scene == 32 && firstChance <= 30 && secondChance <= 90)//Random encounter 
                     {
                         scene = 35;
                     }
@@ -648,7 +651,7 @@ namespace Adventure_Game_Summative_Actual
                     {
                         scene = 33;
                     }
-                    else if (scene == 35 && firstChance <= 30 && secondChance <= 90)
+                    else if (scene == 35 && firstChance <= 30 && secondChance <= 90)//Random encounter 
                     {
                         scene = 36;
                     }
@@ -660,7 +663,7 @@ namespace Adventure_Game_Summative_Actual
                     {
                         scene = 33;
                     }
-                    else if (scene == 36 && firstChance <= 30 && secondChance <= 90)
+                    else if (scene == 36 && firstChance <= 30 && secondChance <= 90)//Random encounter 
                     {
                         scene = 9;
                     }
@@ -674,9 +677,10 @@ namespace Adventure_Game_Summative_Actual
                     }
                 }
 
-                switch (scene)
+                switch (scene)//Switches the scene that user is on
                 {
                     case 0:
+                        //Sets the information presented in the scene
                         titleLabel.Text = name + " looks at his phone. It reads: " + thisDay.ToString("D") + " 12:00 AM." + name + " looks around themself and barely makes out an abandoned lab at Central. What should " + name + " do?";
                         firstChoiceLabel.Text = "Check the front door";
                         secondChoiceLabel.Text = "Check the back door";
@@ -689,8 +693,8 @@ namespace Adventure_Game_Summative_Actual
                         thirdChoiceLabel.Text = "";
                         break;
                     case 2:
-                        themeSong.Stop();
-                        billNye.PlayLooping();
+                        themeSong.Stop();//Stops playing the theme song
+                        billNye.PlayLooping();//Starts playing the bill nye theme sing
 
                         titleLabel.Text = "The door is unlocked, " + name + " hears the Bill Nye theme song behind them. Should. " + name;
                         firstChoiceLabel.Text = "Sing along";
@@ -698,8 +702,8 @@ namespace Adventure_Game_Summative_Actual
                         thirdChoiceLabel.Text = "";
                         break;
                     case 3:
-                        billNye.Stop();
-                        themeSong.PlayLooping();
+                        billNye.Stop();//Stops playing the bill nye theme song
+                        themeSong.PlayLooping();//Starts playing the theme song
 
                         redButtonPicture.Visible = false;
                         yellowButtonPicture.Visible = false;
@@ -710,8 +714,8 @@ namespace Adventure_Game_Summative_Actual
 
                         titleLabel.Text = name + " dies of snapping their neck from jamming to Bill Nye too much. You Lose! If you want to restart press R. If you want to exit press B.";
 
-                        print = true;
-                        Refresh();
+                        print = true;//Makes print true
+                        Refresh();//Calls paint event
                         break;
                     case 4:
                         redButtonPicture.Visible = false;
@@ -835,6 +839,8 @@ namespace Adventure_Game_Summative_Actual
                         Refresh();
                         break;
                     case 16:
+                        winSound.Play();//Plays sound if user wins
+
                         titleLabel.Text = name + " fights the monster and wins. You win! If you want to restart press R. If you want to exit press B. ";
 
                         firstChoiceLabel.Text = "Restart";
@@ -848,7 +854,7 @@ namespace Adventure_Game_Summative_Actual
                         thirdChoiceLabel.Text = "Colourless test tube";
                         break;
                     case 18:
-                        winSound.Play();
+                        winSound.Play();//Plays sound if user wins
 
                         titleLabel.Text = name + " picks up and unstoppers the test tube and is overtaken by a strange desire to drink the contents " + name + " begins to feel a mysterious change. " + name + "suddenly turns into a large green monster and easily escapes the school. You win! If you want to restart press R. If you want to exit press B.";
                         firstChoiceLabel.Text = "Restart";
@@ -906,7 +912,7 @@ namespace Adventure_Game_Summative_Actual
                         thirdChoiceLabel.Text = "";
                         break;
                     case 25:
-                        winSound.Play();
+                        winSound.Play();//Plays sound if user wins
 
                         titleLabel.Text = name + " survives the night but is found in the morning and suspended on the spot. You win!...kinda. If you want to restart press R. If you want to exit press B.";
                         firstChoiceLabel.Text = "Restart";
@@ -914,7 +920,7 @@ namespace Adventure_Game_Summative_Actual
                         thirdChoiceLabel.Text = "";
                         break;
                     case 26:
-                        winSound.Play();
+                        winSound.Play();//Plays sound if user wins
 
                         titleLabel.Text = name + " breaks the window and survives the jump. " + name + " escapes the school. You win! If you want to restart press R. If you want to exit press B.";
                         firstChoiceLabel.Text = "Restart";
@@ -922,7 +928,7 @@ namespace Adventure_Game_Summative_Actual
                         thirdChoiceLabel.Text = "";
                         break;
                     case 27:
-                        winSound.Play();
+                        winSound.Play();//Plays sound if user wins
 
                         titleLabel.Text = name + " fails to break the window. " + name + " is forced to stay the night. " + name + " survives the night but is found in the morning and suspended on the spot. You win!...kinda. If you want to restart press R. If you want to exit press B.";
                         firstChoiceLabel.Text = "Restart";
@@ -1020,6 +1026,7 @@ namespace Adventure_Game_Summative_Actual
         }
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            //Declares variables for x values of shape
             int x1 = 520;
             int x2 = 525;
             int x3 = 650;
@@ -1028,40 +1035,40 @@ namespace Adventure_Game_Summative_Actual
 
             if (print)
             {
-                themeSong.Stop();
-                endGame.Play();
+                themeSong.Stop();//Stops playing theme song
+                endGame.Play();//Starts playing end game sound
 
+                //Creates brushes for strings and the tombstone
                 Font bigFont = new Font("Consolas", 25, FontStyle.Bold);
                 Font smallFont = new Font("Consolas", 10, FontStyle.Bold);
                 SolidBrush drawBrush = new SolidBrush(Color.White);
                 Pen whitePen = new Pen(Color.White, 2);
                 
-
-                
-
-                for (int x = 0; x < 21; x++)
+                for (int x = 0; x < 21; x++)//Loops the following code 20 times 
                 {
-                    Point[] grave = { new Point(x1, 150), new Point(x2, 150), new Point(x2, 145), new Point(x3, 145), new Point(x3, 150), new Point(x4, 150), new Point(x4, 350), new Point(x1, 350) };
+                    Point[] grave = { new Point(x1, 150), new Point(x2, 150), new Point(x2, 145), new Point(x3, 145), new Point(x3, 150), new Point(x4, 150), new Point(x4, 350), new Point(x1, 350) };//Draws a tombstone for the death of the main character
 
-                    e.Graphics.Clear(Color.Black);
+                    e.Graphics.Clear(Color.Black);//Clears screen and makes it black 
 
-                    e.Graphics.DrawPolygon(whitePen, grave);
+                    e.Graphics.DrawPolygon(whitePen, grave);//Draws tombstone
 
+                    //Draws text on tombstone
                     e.Graphics.DrawString("R.I.P", bigFont, drawBrush, x2, 150);
                     e.Graphics.DrawString(name, bigFont, drawBrush, x2, 180);
                     e.Graphics.DrawString("Died on:\n" + thisDay.ToString("D"), smallFont, drawBrush, x5, 220);
 
+                    //Subtracts 20 from each variables
                     x1 -= 20;
                     x2 -= 20;
                     x3 -= 20;
                     x4 -= 20;
                     x5 -= 20;
 
-                    Thread.Sleep(100);
+                    Thread.Sleep(100);//Delays for 100 milliseconds
 
                 }
 
-                print = false;
+                print = false;//Makes print false
             }
         }
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.beginButton = new System.Windows.Forms.Button();
             this.thirdChoiceLabel = new System.Windows.Forms.Label();
             this.secondChoiceLabel = new System.Windows.Forms.Label();
@@ -108,7 +109,7 @@
             // yellowButtonPicture
             // 
             this.yellowButtonPicture.BackColor = System.Drawing.Color.Black;
-            this.yellowButtonPicture.Image = global::Adventure_Game_Summative_Actual.Properties.Resources.yellow_50x50;
+            this.yellowButtonPicture.Image = ((System.Drawing.Image)(resources.GetObject("yellowButtonPicture.Image")));
             this.yellowButtonPicture.Location = new System.Drawing.Point(13, 319);
             this.yellowButtonPicture.Name = "yellowButtonPicture";
             this.yellowButtonPicture.Size = new System.Drawing.Size(59, 48);
@@ -128,8 +129,8 @@
             // redButtonPicture
             // 
             this.redButtonPicture.BackColor = System.Drawing.Color.Black;
-            this.redButtonPicture.Image = global::Adventure_Game_Summative_Actual.Properties.Resources.red_50x50;
-            this.redButtonPicture.InitialImage = global::Adventure_Game_Summative_Actual.Properties.Resources.red_50x50;
+            this.redButtonPicture.Image = ((System.Drawing.Image)(resources.GetObject("redButtonPicture.Image")));
+            this.redButtonPicture.InitialImage = ((System.Drawing.Image)(resources.GetObject("redButtonPicture.InitialImage")));
             this.redButtonPicture.Location = new System.Drawing.Point(13, 221);
             this.redButtonPicture.Name = "redButtonPicture";
             this.redButtonPicture.Size = new System.Drawing.Size(59, 49);
