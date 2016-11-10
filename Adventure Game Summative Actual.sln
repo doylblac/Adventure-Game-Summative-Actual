@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adventure Game Summative Actual", "Adventure Game Summative Actual\Adventure Game Summative Actual.csproj", "{B27E2926-8DC4-404F-82F2-CF1A2A8F9C3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B27E2926-8DC4-404F-82F2-CF1A2A8F9C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27E2926-8DC4-404F-82F2-CF1A2A8F9C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27E2926-8DC4-404F-82F2-CF1A2A8F9C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27E2926-8DC4-404F-82F2-CF1A2A8F9C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
