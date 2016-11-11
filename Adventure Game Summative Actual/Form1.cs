@@ -48,7 +48,7 @@ namespace Adventure_Game_Summative_Actual
             //Makes it impossible to input no name
             if (nameInput.Text == "")
             {
-                titleLabel.Text = "Welcome adventurer, what is your name?\nPlease enter your name.";
+                titleLabel.Text = "Welcome adventurer, what is your name? Please enter your name.";
             }
             else
             {
@@ -877,7 +877,7 @@ namespace Adventure_Game_Summative_Actual
                 case 18:
                     winSound.Play();//Plays sound if user wins
 
-                    titleLabel.Text = name + " picks up and unstoppers the test tube and is overtaken by a strange desire to drink the contents " + name + " begins to feel a mysterious change. " + name + " suddenly turns into a large green monster and easily escapes the school. You win! If you want to restart press M. If you want to exit press B.";
+                    titleLabel.Text = name + " picks up and unstoppers the test tube and is overtaken by a strange desire to drink the contents. " + name + " suddenly turns into a large green monster and easily escapes the school. You win! If you want to restart press M. If you want to exit press B.";
                     firstChoiceLabel.Text = "Restart";
                     secondChoiceLabel.Text = "Exit";
                     thirdChoiceLabel.Text = "";

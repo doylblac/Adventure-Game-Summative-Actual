@@ -56,6 +56,7 @@
             // 
             // thirdChoiceLabel
             // 
+            this.thirdChoiceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thirdChoiceLabel.ForeColor = System.Drawing.Color.White;
             this.thirdChoiceLabel.Location = new System.Drawing.Point(78, 323);
             this.thirdChoiceLabel.Name = "thirdChoiceLabel";
@@ -64,6 +65,7 @@
             // 
             // secondChoiceLabel
             // 
+            this.secondChoiceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondChoiceLabel.ForeColor = System.Drawing.Color.White;
             this.secondChoiceLabel.Location = new System.Drawing.Point(83, 269);
             this.secondChoiceLabel.Name = "secondChoiceLabel";
@@ -72,6 +74,7 @@
             // 
             // firstChoiceLabel
             // 
+            this.firstChoiceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstChoiceLabel.ForeColor = System.Drawing.Color.White;
             this.firstChoiceLabel.Location = new System.Drawing.Point(83, 221);
             this.firstChoiceLabel.Name = "firstChoiceLabel";
@@ -81,28 +84,28 @@
             // firstButtonLabel
             // 
             this.firstButtonLabel.AutoSize = true;
-            this.firstButtonLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstButtonLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstButtonLabel.ForeColor = System.Drawing.Color.White;
             this.firstButtonLabel.Location = new System.Drawing.Point(10, 108);
             this.firstButtonLabel.Name = "firstButtonLabel";
-            this.firstButtonLabel.Size = new System.Drawing.Size(170, 18);
+            this.firstButtonLabel.Size = new System.Drawing.Size(216, 24);
             this.firstButtonLabel.TabIndex = 14;
             this.firstButtonLabel.Text = "Click the button to begin.";
             // 
             // nameInput
             // 
-            this.nameInput.Location = new System.Drawing.Point(294, 9);
+            this.nameInput.Location = new System.Drawing.Point(294, 66);
             this.nameInput.Name = "nameInput";
             this.nameInput.Size = new System.Drawing.Size(60, 20);
             this.nameInput.TabIndex = 13;
             // 
             // titleLabel
             // 
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.White;
             this.titleLabel.Location = new System.Drawing.Point(10, 12);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(344, 114);
+            this.titleLabel.Size = new System.Drawing.Size(344, 177);
             this.titleLabel.TabIndex = 12;
             this.titleLabel.Text = "Welcome adventurer, what is your name? ";
             // 
