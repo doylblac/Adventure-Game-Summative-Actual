@@ -702,7 +702,7 @@ namespace Adventure_Game_Summative_Actual
             {
                 case 0:
                     //Sets the information presented in the scene
-                    titleLabel.Text = name + " looks at his phone. It reads: " + thisDay.ToString("D") + " 12:00 AM." + name + " looks around themself and barely makes out an abandoned lab at Central. What should " + name + " do?";
+                    titleLabel.Text = name + " looks at his phone. It reads: " + thisDay.ToString("D") + " 12:00 AM. " + name + " looks around themself and barely makes out an abandoned lab at Central. What should " + name + " do?";
                     firstChoiceLabel.Text = "Check the front door";
                     secondChoiceLabel.Text = "Check the back door";
                     thirdChoiceLabel.Text = "Investigate the lab";
@@ -752,7 +752,7 @@ namespace Adventure_Game_Summative_Actual
                     Refresh();
                     break;
                 case 5:
-                    titleLabel.Text = name + " sees a figure in the darkness and shuts the door then runs down the stairs to the second floor. Should " + name + " enter the library or continue running down the stairs?.";
+                    titleLabel.Text = name + " sees a figure in the darkness and shuts the door then runs down the stairs to the second floor. Should " + name + " enter the library or continue running down the stairs?";
                     firstChoiceLabel.Text = "Continue running down the stairs";
                     secondChoiceLabel.Text = "Enter the Library";
                     thirdChoiceLabel.Text = "";
@@ -1051,6 +1051,8 @@ namespace Adventure_Game_Summative_Actual
             int x3 = 650;
             int x4 = 655;
             int x5 = 525;
+            int x6 = 695;
+            int x7 = 480;
 
             if (print)
             {
@@ -1065,16 +1067,16 @@ namespace Adventure_Game_Summative_Actual
 
                 for (int x = 0; x < 21; x++)//Loops the following code 20 times 
                 {
-                    Point[] grave = { new Point(x1, 150), new Point(x2, 150), new Point(x2, 145), new Point(x3, 145), new Point(x3, 150), new Point(x4, 150), new Point(x4, 350), new Point(x1, 350) };//Draws a tombstone for the death of the main character
+                    Point[] grave = { new Point(x1, 225), new Point(x2, 225), new Point(x2, 220), new Point(x3, 220), new Point(x3, 225), new Point(x4, 225), new Point(x4, 425), new Point(x6, 425), new Point (x7, 425), new Point(x1, 425) };//Draws a tombstone for the death of the main character
 
                     e.Graphics.Clear(Color.Black);//Clears screen and makes it black 
 
                     e.Graphics.DrawPolygon(whitePen, grave);//Draws tombstone
 
                     //Draws text on tombstone
-                    e.Graphics.DrawString("R.I.P", bigFont, drawBrush, x2, 150);
-                    e.Graphics.DrawString(name, bigFont, drawBrush, x2, 180);
-                    e.Graphics.DrawString("Died on:\n" + thisDay.ToString("D"), smallFont, drawBrush, x5, 220);
+                    e.Graphics.DrawString("R.I.P", bigFont, drawBrush, x2, 225);
+                    e.Graphics.DrawString(name, bigFont, drawBrush, x2, 255);
+                    e.Graphics.DrawString("Died on:\n" + thisDay.ToString("D"), smallFont, drawBrush, x5, 295);
 
                     //Subtracts 20 from each variables
                     x1 -= 20;
@@ -1082,6 +1084,8 @@ namespace Adventure_Game_Summative_Actual
                     x3 -= 20;
                     x4 -= 20;
                     x5 -= 20;
+                    x6 -= 20;
+                    x7 -= 20;
 
                     Thread.Sleep(100);//Delays for 100 milliseconds
                 }

@@ -58,7 +58,7 @@
             // 
             this.thirdChoiceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thirdChoiceLabel.ForeColor = System.Drawing.Color.White;
-            this.thirdChoiceLabel.Location = new System.Drawing.Point(78, 323);
+            this.thirdChoiceLabel.Location = new System.Drawing.Point(77, 383);
             this.thirdChoiceLabel.Name = "thirdChoiceLabel";
             this.thirdChoiceLabel.Size = new System.Drawing.Size(275, 44);
             this.thirdChoiceLabel.TabIndex = 20;
@@ -67,7 +67,7 @@
             // 
             this.secondChoiceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondChoiceLabel.ForeColor = System.Drawing.Color.White;
-            this.secondChoiceLabel.Location = new System.Drawing.Point(83, 269);
+            this.secondChoiceLabel.Location = new System.Drawing.Point(83, 326);
             this.secondChoiceLabel.Name = "secondChoiceLabel";
             this.secondChoiceLabel.Size = new System.Drawing.Size(275, 51);
             this.secondChoiceLabel.TabIndex = 19;
@@ -76,7 +76,7 @@
             // 
             this.firstChoiceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstChoiceLabel.ForeColor = System.Drawing.Color.White;
-            this.firstChoiceLabel.Location = new System.Drawing.Point(83, 221);
+            this.firstChoiceLabel.Location = new System.Drawing.Point(82, 273);
             this.firstChoiceLabel.Name = "firstChoiceLabel";
             this.firstChoiceLabel.Size = new System.Drawing.Size(275, 49);
             this.firstChoiceLabel.TabIndex = 17;
@@ -105,7 +105,7 @@
             this.titleLabel.ForeColor = System.Drawing.Color.White;
             this.titleLabel.Location = new System.Drawing.Point(10, 12);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(344, 177);
+            this.titleLabel.Size = new System.Drawing.Size(344, 205);
             this.titleLabel.TabIndex = 12;
             this.titleLabel.Text = "Welcome adventurer, what is your name? ";
             // 
@@ -113,7 +113,7 @@
             // 
             this.yellowButtonPicture.BackColor = System.Drawing.Color.Black;
             this.yellowButtonPicture.Image = ((System.Drawing.Image)(resources.GetObject("yellowButtonPicture.Image")));
-            this.yellowButtonPicture.Location = new System.Drawing.Point(13, 319);
+            this.yellowButtonPicture.Location = new System.Drawing.Point(12, 383);
             this.yellowButtonPicture.Name = "yellowButtonPicture";
             this.yellowButtonPicture.Size = new System.Drawing.Size(59, 48);
             this.yellowButtonPicture.TabIndex = 18;
@@ -123,7 +123,7 @@
             // 
             this.blueButtonPicture.BackColor = System.Drawing.Color.Black;
             this.blueButtonPicture.Image = global::Adventure_Game_Summative_Actual.Properties.Resources.blue_50x50;
-            this.blueButtonPicture.Location = new System.Drawing.Point(13, 271);
+            this.blueButtonPicture.Location = new System.Drawing.Point(12, 328);
             this.blueButtonPicture.Name = "blueButtonPicture";
             this.blueButtonPicture.Size = new System.Drawing.Size(59, 49);
             this.blueButtonPicture.TabIndex = 16;
@@ -134,7 +134,7 @@
             this.redButtonPicture.BackColor = System.Drawing.Color.Black;
             this.redButtonPicture.Image = ((System.Drawing.Image)(resources.GetObject("redButtonPicture.Image")));
             this.redButtonPicture.InitialImage = ((System.Drawing.Image)(resources.GetObject("redButtonPicture.InitialImage")));
-            this.redButtonPicture.Location = new System.Drawing.Point(13, 221);
+            this.redButtonPicture.Location = new System.Drawing.Point(12, 273);
             this.redButtonPicture.Name = "redButtonPicture";
             this.redButtonPicture.Size = new System.Drawing.Size(59, 49);
             this.redButtonPicture.TabIndex = 15;
@@ -145,7 +145,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(369, 376);
+            this.ClientSize = new System.Drawing.Size(369, 431);
             this.Controls.Add(this.beginButton);
             this.Controls.Add(this.thirdChoiceLabel);
             this.Controls.Add(this.secondChoiceLabel);
@@ -156,8 +156,9 @@
             this.Controls.Add(this.firstButtonLabel);
             this.Controls.Add(this.nameInput);
             this.Controls.Add(this.titleLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Adventure Game";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.yellowButtonPicture)).EndInit();
