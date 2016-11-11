@@ -36,9 +36,9 @@ namespace Adventure_Game_Summative_Actual
             nameInput.MaxLength = 6;//Sets the max length of the textbox to 6 characters
 
             //Gives instructions to the user
-            firstChoiceLabel.Text = "Press R To continue";
+            firstChoiceLabel.Text = "Press M To continue";
             secondChoiceLabel.Text = "Press B to continue";
-            thirdChoiceLabel.Text = "Press Y to continue";
+            thirdChoiceLabel.Text = "Press N to continue";
         }
 
         private void beginButton_Click(object sender, EventArgs e)
@@ -78,7 +78,7 @@ namespace Adventure_Game_Summative_Actual
 
             #region R button clicks
             //Switches between scene when the R button is pressed
-            if (e.KeyCode == Keys.R)
+            if (e.KeyCode == Keys.M)
             {
                 if (scene == 0)
                 {
@@ -646,7 +646,7 @@ namespace Adventure_Game_Summative_Actual
             }
             #endregion
             #region y key presses
-            else if (e.KeyCode == Keys.Y)//Changes scenes if Y key is pressed
+            else if (e.KeyCode == Keys.N)//Changes scenes if Y key is pressed
             {
                 if (scene == 0)
                 {
@@ -733,7 +733,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " dies of snapping their neck from jamming to Bill Nye too much. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " dies of snapping their neck from jamming to Bill Nye too much. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;//Makes print true
                     Refresh();//Calls paint event
@@ -746,7 +746,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " is caught by the monster and killed. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " is caught by the monster and killed. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -765,7 +765,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " is caught by the monster and killed. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " is caught by the monster and killed. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -784,7 +784,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " is trapped inside the bibrary and can't live off of eating books. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " is trapped inside the bibrary and can't live off of eating books. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -809,7 +809,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = "The monster uses a chair as a weapon to knock out and kill " + name + ". You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = "The monster uses a chair as a weapon to knock out and kill " + name + ". You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -822,7 +822,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " is caught by the monster and killed. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " is caught by the monster and killed. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -835,7 +835,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = "God is unable to save " + name + " from the monster, You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = "God is unable to save " + name + " from the monster, You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -854,7 +854,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " is caught by the monster and killed. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " is caught by the monster and killed. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -862,7 +862,7 @@ namespace Adventure_Game_Summative_Actual
                 case 16:
                     winSound.Play();//Plays sound if user wins
 
-                    titleLabel.Text = name + " fights the monster and wins. You win! If you want to restart press R. If you want to exit press B. ";
+                    titleLabel.Text = name + " fights the monster and wins. You win! If you want to restart press M. If you want to exit press B. ";
 
                     firstChoiceLabel.Text = "Restart";
                     secondChoiceLabel.Text = "Exit";
@@ -877,7 +877,7 @@ namespace Adventure_Game_Summative_Actual
                 case 18:
                     winSound.Play();//Plays sound if user wins
 
-                    titleLabel.Text = name + " picks up and unstoppers the test tube and is overtaken by a strange desire to drink the contents " + name + " begins to feel a mysterious change. " + name + " suddenly turns into a large green monster and easily escapes the school. You win! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " picks up and unstoppers the test tube and is overtaken by a strange desire to drink the contents " + name + " begins to feel a mysterious change. " + name + " suddenly turns into a large green monster and easily escapes the school. You win! If you want to restart press M. If you want to exit press B.";
                     firstChoiceLabel.Text = "Restart";
                     secondChoiceLabel.Text = "Exit";
                     thirdChoiceLabel.Text = "";
@@ -890,7 +890,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " starts to feel strange. " + name + " has no recollection of what happens next. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " starts to feel strange. " + name + " has no recollection of what happens next. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -909,7 +909,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " unstoppers the test tube and it emits a lethal gas. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " unstoppers the test tube and it emits a lethal gas. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -921,7 +921,7 @@ namespace Adventure_Game_Summative_Actual
                     thirdChoiceLabel.Text = "";
                     break;
                 case 23:
-                    titleLabel.Text = name + " checks the door and the door is locked. Just to be certain " + name + " checks the other door and it is also locked. What should " + name + "do?";
+                    titleLabel.Text = name + " checks the door and the door is locked. Just to be certain " + name + " checks the other door and it is also locked. What should " + name + " do?";
                     firstChoiceLabel.Text = "Wait until morning";
                     secondChoiceLabel.Text = "Attempt to break the window and escape";
                     thirdChoiceLabel.Text = "";
@@ -935,7 +935,7 @@ namespace Adventure_Game_Summative_Actual
                 case 25:
                     winSound.Play();//Plays sound if user wins
 
-                    titleLabel.Text = name + " survives the night but is found in the morning and suspended on the spot. You win!...kinda. If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " survives the night but is found in the morning and suspended on the spot. You win!...kinda. If you want to restart press M. If you want to exit press B.";
                     firstChoiceLabel.Text = "Restart";
                     secondChoiceLabel.Text = "Exit";
                     thirdChoiceLabel.Text = "";
@@ -943,7 +943,7 @@ namespace Adventure_Game_Summative_Actual
                 case 26:
                     winSound.Play();//Plays sound if user wins
 
-                    titleLabel.Text = name + " breaks the window and survives the jump. " + name + " escapes the school. You win! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " breaks the window and survives the jump. " + name + " escapes the school. You win! If you want to restart press M. If you want to exit press B.";
                     firstChoiceLabel.Text = "Restart";
                     secondChoiceLabel.Text = "Exit";
                     thirdChoiceLabel.Text = "";
@@ -951,7 +951,7 @@ namespace Adventure_Game_Summative_Actual
                 case 27:
                     winSound.Play();//Plays sound if user wins
 
-                    titleLabel.Text = name + " fails to break the window. " + name + " is forced to stay the night. " + name + " survives the night but is found in the morning and suspended on the spot. You win!...kinda. If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " fails to break the window. " + name + " is forced to stay the night. " + name + " survives the night but is found in the morning and suspended on the spot. You win!...kinda. If you want to restart press M. If you want to exit press B.";
                     firstChoiceLabel.Text = "Restart";
                     secondChoiceLabel.Text = "Exit";
                     thirdChoiceLabel.Text = "";
@@ -964,7 +964,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " breaks the window but dies on the jump. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " breaks the window but dies on the jump. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -977,7 +977,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " falls down in their attempt to run and breaks their neck. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " falls down in their attempt to run and breaks their neck. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -1011,7 +1011,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " falls down in their attempt to run and breaks their neck. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " falls down in their attempt to run and breaks their neck. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
@@ -1024,7 +1024,7 @@ namespace Adventure_Game_Summative_Actual
                     secondChoiceLabel.Visible = false;
                     thirdChoiceLabel.Visible = false;
 
-                    titleLabel.Text = name + " is caught by the monster and killed. You Lose! If you want to restart press R. If you want to exit press B.";
+                    titleLabel.Text = name + " is caught by the monster and killed. You Lose! If you want to restart press M. If you want to exit press B.";
 
                     print = true;
                     Refresh();
