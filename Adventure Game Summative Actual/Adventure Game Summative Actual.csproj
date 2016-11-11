@@ -95,6 +95,15 @@
   <ItemGroup>
     <None Include="Resources\270528__littlerobotsoundfactory__jingle-win-00.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TaDa_.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Central Icon.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -72,15 +72,6 @@ namespace Adventure_Game_Summative_Actual.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream _270528__littlerobotsoundfactory__jingle_win_00 {
-            get {
-                return ResourceManager.GetStream("_270528__littlerobotsoundfactory__jingle_win_00", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         internal static System.IO.UnmanagedMemoryStream _320553__griffon_designs__dirty_grind {
             get {
                 return ResourceManager.GetStream("_320553__griffon_designs__dirty_grind", resourceCulture);
@@ -113,6 +104,15 @@ namespace Adventure_Game_Summative_Actual.Properties {
             get {
                 object obj = ResourceManager.GetObject("red_50x50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream TaDa_ {
+            get {
+                return ResourceManager.GetStream("TaDa_", resourceCulture);
             }
         }
         
